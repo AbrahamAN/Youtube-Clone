@@ -1,5 +1,6 @@
 .sidebar {
   flex: 0.2;
+  background-color: white;
 }
 
 .sidebar > hr {

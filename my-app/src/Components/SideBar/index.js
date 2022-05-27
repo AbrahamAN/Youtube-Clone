@@ -1,6 +1,6 @@
 import React from "react";
 import "./Sidebar.css";
-import { SidebarRow } from "./SidebarRow";
+import { SidebarRow } from "../../Utils/SidebarRow";
 import VideoLibraryIcon from "@mui/icons-material/VideoLibrary";
 import HistoryIcon from "@mui/icons-material/History";
 import OndemandVideoIcon from "@mui/icons-material/OndemandVideo";
