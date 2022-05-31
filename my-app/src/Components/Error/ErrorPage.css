@@ -1,0 +1,4 @@
+.image-error {
+  width: calc(100vw - 200px);
+  height: calc(100vh - 90px);
+}

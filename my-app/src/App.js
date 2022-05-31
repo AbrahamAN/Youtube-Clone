@@ -5,6 +5,10 @@ import { SearchPage } from "./Components/SearchPage/index";
 import { Sidebar } from "./Components/SideBar/index";
 import { RecommendedVideos } from "./Components/RecommendedVideos/index";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import dayjs from "dayjs";
+import relativeTime from "dayjs/plugin/relativeTime";
+
+dayjs.extend(relativeTime);
 
 function App() {
   return (
