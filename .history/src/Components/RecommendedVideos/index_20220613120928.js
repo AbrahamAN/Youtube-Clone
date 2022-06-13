@@ -3,18 +3,6 @@ import "./Recommendedvideos.css";
 import { VideoCard } from "../../Utils/VideoCard/index";
 import dayjs from "dayjs";
 
-const humanize = () => {
-  return Intl.NumberFormat("en", { notation: "compact" }).format(
-    Math.floor(Math.random() * (10000000 - 10000) + 10000)
-  );
-};
-
-const dateHumanize = () => {
-  return Intl.NumberFormat("en", { notation: "compact" }).format(
-    Math.floor(Math.random() * (10 - 1) + 1)
-  );
-};
-
 function RecommendedVideos() {
   const [recommendedVideos, setRecommendedVideos] = useState([]);
 
@@ -49,8 +37,8 @@ function RecommendedVideos() {
               key={recommendedVideo.id.videoId}
               channelImage="https://avatars2.githubusercontent.com/u/24712956?s=400&u=b71527e605ae1b748fc2d4127a842e57e427ad44&v=4"
               title={recommendedVideo.snippet.title}
-              views={humanize()}
-              timestamp={dateHumanize() + "days a ago"}
+              views={Math.random()}
+              timestamp={dayjs(recommendedVideo.snippet.publishedAt).fromNow()}
               channel={recommendedVideo.snippet.channel}
               image={recommendedVideo.snippet.thumbnails.medium.url}
             />

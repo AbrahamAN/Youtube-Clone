@@ -50,7 +50,7 @@ function RecommendedVideos() {
               channelImage="https://avatars2.githubusercontent.com/u/24712956?s=400&u=b71527e605ae1b748fc2d4127a842e57e427ad44&v=4"
               title={recommendedVideo.snippet.title}
               views={humanize()}
-              timestamp={dateHumanize() + "days a ago"}
+              timestamp={dayjs(recommendedVideo.snippet.publishedAt).fromNow()}
               channel={recommendedVideo.snippet.channel}
               image={recommendedVideo.snippet.thumbnails.medium.url}
             />
