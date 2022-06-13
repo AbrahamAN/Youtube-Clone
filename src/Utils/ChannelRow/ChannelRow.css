@@ -1,0 +1,54 @@
+.channelRow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.channelRow__logo {
+  height: 140px !important;
+  width: 140px !important;
+  margin: 10px 60px;
+}
+.channelRow__text {
+  margin-left: 50px;
+}
+
+.channelRow__text > p {
+  margin-top: 10px;
+  color: #606060;
+  font-size: small !important;
+}
+
+.channelRow__text > h4 {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  width: 180px;
+  justify-content: space-between;
+}
+
+.channelRow__Sub {
+  background-color: gray;
+  font-weight: 400;
+  border-radius: 7px;
+  margin-left: 20px;
+  border: 1px solid transparent;
+  height: 40px;
+  width: 100px;
+  cursor: pointer;
+  margin-top: 35px;
+  color: lightgray;
+}
+
+.channelRow__Activity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.channelRow__Alert {
+  margin-top: 35px;
+  margin-left: 15px;
+  cursor: pointer;
+}
